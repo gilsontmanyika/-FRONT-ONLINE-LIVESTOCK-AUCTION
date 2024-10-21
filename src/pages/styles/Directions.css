@@ -1,0 +1,80 @@
+:root {
+  ---primaryColor: #7a63f1;
+  ---secondaryColor: #ebe8fc;
+  ---textColor: #a3a3a3;
+  ---greyColor: #f4f4f4;
+  ---whiteColor: #f5f4f5;
+  ---blackColor: #434344;
+}
+
+.overall {
+  padding-top: 50px;
+  background-color: rgb(164, 230, 230);
+  margin: 0 auto;
+  width: 85%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.overall .dfooting {
+  position: bottom;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.directions {
+  position: "fixed";
+  top: 0;
+}
+
+.zviheader {
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.zviheader h1 {
+  font-size: 65px;
+  font-weight: bolder;
+  text-align: center; /* Use text-align instead of align-self */
+  margin-bottom: 20px; /* Add some space between the h1 and the grid items */
+}
+
+.zviheader p {
+  text-align: center;
+  color: black;
+}
+
+.dirContents {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-auto-rows: 1fr; /* Add this to make the grid items evenly spaced */
+}
+
+.dirsection {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+.dirsection:hover {
+  background-color: #f7f7f7;
+}
+
+.dirsection h2 {
+  margin-top: 0;
+}
+
+.dirsection a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.dirsection a:hover {
+  color: #23527c;
+}/*# sourceMappingURL=Directions.css.map */

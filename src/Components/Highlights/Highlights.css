@@ -1,0 +1,268 @@
+:root {
+  ---primaryColor: #7a63f1;
+  ---secondaryColor: #ebe8fc;
+  ---textColor: #a3a3a3;
+  ---greyColor: #f4f4f4;
+  ---whiteColor: #f5f4f5;
+  ---blackColor: #434344;
+}
+
+.highlights {
+  margin-top: 0.5rem;
+  padding: 2rem 0;
+  background-image: url(../../assets/back2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.highlights .secContainer .secHeading {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.highlights .secContainer .secHeading .secTitle {
+  font-size: 40px;
+}
+.highlights .secContainer .secHeading .navBtns {
+  gap: 0.5rem;
+}
+.highlights .secContainer .secHeading .navBtns .icon {
+  padding: 3px 5px;
+  background: var(---secondaryColor);
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.highlights .secContainer .secHeading .navBtns .icon:hover {
+  background: var(---primaryColor);
+  color: var(---whiteColor);
+}
+.highlights .secContainer .twoColumn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.highlights .secContainer .twoColumn .singleCattle {
+  transition: 0.3s ease-in-out;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #a3a3a3;
+}
+.highlights .secContainer .twoColumn .singleCattle .imgDiv {
+  height: 200px;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid transparent;
+  flex: 1;
+  margin-right: 1rem;
+}
+.highlights .secContainer .twoColumn .singleCattle .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText {
+  width: 50%;
+  flex: 1;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .breed {
+  color: var(---blackColor);
+  font-size: 15px;
+  padding-top: 10px;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .age {
+  color: var(---blackColor);
+  opacity: 0.7;
+  font-size: 14px;
+  margin-right: 2rem;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .location {
+  margin-left: 1rem;
+  padding: 2rem 0;
+  color: var(---blackColor);
+  font-weight: 600;
+  font-size: 15px;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .priceBid {
+  gap: 1rem;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .priceBid span {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .priceBid .price {
+  background: var(---secondaryColor);
+  color: var(---primaryColor);
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .priceBid .bid {
+  background: var(---primaryColor);
+  color: var(---whiteColor);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+}
+.highlights .secContainer .twoColumn .singleCattle .theText .priceBid .bid:hover {
+  background: var(---secondaryColor);
+  color: var(---textColor);
+}
+.highlights .secContainer .twoColumn .singleCattle .theText:hover {
+  transform: translateY(-7px);
+  padding: 1rem;
+  background: var(---secondaryColor);
+}
+.highlights .secContainer .twoColumn .singleCattle .theText:hover .priceBid span {
+  border: 1px solid var(---primaryColor);
+}
+.highlights .secContainer .twoColumn .singleCattle .theText > * {
+  margin-bottom: 10px;
+}
+.highlights .secContainer .singleCattleActive {
+  padding: 1rem;
+  background: var(---secondaryColor);
+}
+.highlights .secContainer .singleCattleActive .priceBid span {
+  border: 1px solid var(---primaryColor);
+}
+
+@media (max-width: 768px) {
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+  .imgDiv, .theText {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .cattleContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .cattleContainer .singleCattle {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 30px;
+  }
+  .cattleContainer .singleCattle .imgDiv {
+    height: 300px;
+    width: 100%;
+  }
+  .cattleContainer .singleCattle .theText {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .cattleContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .cattleContainer .singleCattle {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 30px;
+  }
+  .cattleContainer .singleCattle .imgDiv {
+    height: 300px;
+    width: 100%;
+  }
+  .cattleContainer .singleCattle .theText {
+    width: 100%;
+  }
+  .navBtns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navBtns button {
+    padding: 10px;
+  }
+}
+@media (max-width: 320px) {
+  /* Add CSS rules for screens with a resolution of 320x480 pixels here */
+  h2 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+  .singleCattle .imgDiv {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    flex: 1;
+    margin-right: 1rem;
+  }
+  .singleCattle .imgDiv img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cattleContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .cattleContainer .singleCattle {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .cattleContainer .singleCattle .imgDiv {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    flex: 1;
+    margin-right: 1rem;
+  }
+  .cattleContainer .singleCattle .imgDiv img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cattleContainer .singleCattle .theText {
+    flex: 1;
+  }
+  .navBtns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBtns button {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .navBtns button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .navBtns button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navBtns button.left {
+    margin-right: 1rem;
+  }
+  .navBtns button.right {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=Highlights.css.map */

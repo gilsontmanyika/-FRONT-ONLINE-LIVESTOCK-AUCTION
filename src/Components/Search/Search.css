@@ -1,0 +1,64 @@
+:root {
+  ---primaryColor: #7a63f1;
+  ---secondaryColor: #ebe8fc;
+  ---textColor: #a3a3a3;
+  ---greyColor: #f4f4f4;
+  ---whiteColor: #f5f4f5;
+  ---blackColor: #434344;
+}
+
+.search {
+  margin-top: 0.5rem;
+  padding: 2rem 0;
+  background-image: url(../../assets/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 2.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.search .title {
+  color: var(---blackColor);
+  font-size: 50px;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 1.7rem;
+}
+.search .searchDiv {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.search .searchDiv input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+}
+.search .searchDiv input:focus {
+  border: none;
+  border: 1px solid var(---primaryColor);
+}
+.search .searchDiv .btn {
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+  gap: 0.3rem;
+  align-self: center;
+}
+.search .searchDiv .btn .icon {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 520px) {
+  .search .title {
+    font-size: 25px;
+    padding: 2rem 0;
+  }
+}/*# sourceMappingURL=Search.css.map */

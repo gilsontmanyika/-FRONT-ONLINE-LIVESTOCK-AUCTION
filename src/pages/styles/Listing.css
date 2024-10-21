@@ -1,0 +1,65 @@
+.list-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  background-image: url(../../assets/sunset.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list-contents .the-title {
+  color: aqua;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.the-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.the-form input[type=string],
+.the-form input[type=number],
+.the-form input[type=email],
+.the-form input[type=integer],
+.the-form input[type=file],
+.the-form input[type=text],
+.the-form textarea,
+.the-form select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0381ff;
+}
+.the-form .register {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+.the-form .register:hover {
+  background-color: #0056b3;
+}
+.the-form .labell {
+  color: aqua;
+}
+
+.browse {
+  color: #ffffff;
+  text-decoration: none;
+  align-self: center;
+}
+.browse:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Listing.css.map */

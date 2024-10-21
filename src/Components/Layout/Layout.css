@@ -1,0 +1,17 @@
+:root {
+  ---primaryColor: #7a63f1;
+  ---secondaryColor: #ebe8fc;
+  ---textColor: #a3a3a3;
+  ---greyColor: #f4f4f4;
+  ---whiteColor: #bbacbb;
+  ---blackColor: #434344;
+}
+
+.layout {
+  padding-top: 50px;
+  background-color: rgb(202, 223, 223);
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=Layout.css.map */

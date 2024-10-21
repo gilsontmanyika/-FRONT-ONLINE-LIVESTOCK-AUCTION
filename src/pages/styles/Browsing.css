@@ -1,0 +1,66 @@
+/* browsing.scss */
+/* browsing.scss */
+.container-browse {
+  margin-top: 50px;
+  width: 85%;
+  background-color: rgb(0, 251, 251);
+  /*background-image: url(../../assets/);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox to center vertically */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Added padding for spacing inside container */
+}
+
+.heading-browse {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* White text color */
+  margin-bottom: 20px; /* Added margin-bottom for spacing */
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.grid-browse {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.card-browse {
+  border: 1px solid #ccc; /* Added border for card */
+  border-radius: 8px; /* Added border-radius for rounded corners */
+  padding: 16px; /* Added padding for spacing inside card */
+  margin: 3px;
+  cursor: pointer; /* Added cursor pointer for hover effect */
+  transition: transform 0.3s ease; /* Added transition for smooth scaling effect */
+}
+
+.card-browse:hover {
+  transform: scale(1.05); /* Scale card on hover */
+}
+
+.image-browse {
+  width: 100%; /* Make image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Added border-radius for rounded corners */
+  margin-bottom: 16px; /* Added margin-bottom for spacing */
+}
+
+.title-browse {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px; /* Added margin-bottom for spacing */
+}
+
+.info-browse {
+  font-size: 14px;
+  color: #666; /* Gray text color */
+  margin-bottom: 8px; /* Added margin-bottom for spacing */
+}
+
+/* Add more custom classes and styles as needed *//*# sourceMappingURL=Browsing.css.map */

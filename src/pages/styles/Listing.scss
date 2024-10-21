@@ -1,0 +1,72 @@
+.list-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    background-image: url(../../assets/sunset.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .the-title{
+      color: aqua;
+      font-size: 50px;
+      font-weight: bolder;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .the-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  
+    input[type="string"],
+    input[type="number"],
+    input[type="email"],
+    input[type="integer"],
+    input[type="file"],
+    input[type="text"],
+    textarea,
+    select {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #0381ff;
+    }
+  
+    .register {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+    .labell{
+      color: aqua;
+    }
+    
+  }
+  
+  .browse {
+    color: #ffffff;
+    text-decoration: none;
+    align-self: center;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  

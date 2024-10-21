@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #f5f4f5;
+  top: 0;
+  z-index: 1000;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgb(237, 237, 237);
+  align-items: center;
+}
+.header.addBg {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.logoDiv .logo {
+  width: 50px;
+  height: 50px;
+}
+.logoDiv h1 {
+  margin-left: 10px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.navbar {
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+  right: 50%;
+  left: 50%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  transition: 0.3s ease;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+}
+.menu .listItem {
+  padding: 0.5rem 1rem;
+}
+.menu .listItem .link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.menu .listItem .link:hover {
+  background-color: #007bff;
+  color: white;
+  padding: 3px;
+}
+
+.signUp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.signUp .text1 {
+  margin-right: 10px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  background: rgb(100, 78, 224);
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+.signUp .text1:hover {
+  color: black;
+  background: rgb(106, 247, 134);
+}
+.signUp .text2 {
+  margin-right: 10px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  background: rgb(100, 78, 224);
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+.signUp .text2:hover {
+  color: black;
+  background: rgb(106, 247, 134);
+}/*# sourceMappingURL=Navbar.css.map */

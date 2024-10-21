@@ -1,0 +1,52 @@
+// Footer.scss
+
+// Footer Container
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Center align all content
+      justify-content: center; // Center align all content
+    }
+  }
+  
+  // Footer Menu
+  .footerMenuDiv {
+    display: flex;
+    flex-direction: column; // Arrange items vertically
+    align-items: center; // Center align all items horizontally
+    margin-bottom: 20px; // Add space between About and footerUl
+    .singleGrid {
+      .footerTitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px; // Add space between About and footerUl
+      }
+      .footerUl {
+        list-style: none;
+        padding: 0;
+        display: flex; // Display footerLi items in a row
+        .footerLi {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  
+  // Footer Lower Section
+  .lowerSection {
+    p {
+      font-size: 0.9rem;
+      margin: 0;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }  
